@@ -2,7 +2,6 @@ import UnitDefTest
 import unittest
 
 class TournamentTest(unittest.TestCase):
-    is_frozen = True
 
     @classmethod
     def setUpClass(cls):
@@ -18,7 +17,7 @@ class TournamentTest(unittest.TestCase):
         for key, value in cls.all_results.items():
             for k, v in value.items():
                 out[k] = str(v)
-            print(out)
+            print(value)
 
     def setUp(self):
         """Set up for test"""
